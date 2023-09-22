@@ -1,0 +1,100 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #348C31;
+}
+
+#stage {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+#road {
+  opacity:.9;
+  width: 100vw;
+  height: 20vh;
+  min-height:100px;
+  background: #888;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.2) 35%,
+      rgba(80, 80, 80, 0.2) 50%,
+      rgba(30, 30, 30, 0.4) 70%,
+      rgba(60, 60, 60, 0.5) 87%,
+      rgba(180, 180, 180, 0.5) 100%
+    ),    url("grainy.gif"); /* Blend in the road */
+  background-size: 19vw auto;
+}
+
+
+#stripes {
+  position: absolute;
+  opacity: 0.5;
+  top: 50%;
+  width: 100vw;
+  min-width:60vw;
+  height: 5%;
+  background: repeating-linear-gradient(
+    to right,
+    white,
+    white 8vw,
+    transparent 8vw,
+    transparent 20vw
+  ); /* Repeating striped lines */
+}
+
+#car_1 {
+  position: absolute;
+  bottom: 7%; /* Adjusts the height of the car in relation to the entire road */
+  height: 25%; /* Adjusts the car's height relative to road height */
+  width: auto; /* Maintains the aspect ratio */
+  z-index: 2; /* Ensures the car is above the road */
+  transition: transform 2s linear; /* Animation function */
+  
+}
+
+
+#car_2 {
+  position: absolute;
+  top: 7%; /* Adjusts the height of the car in relation to the entire road */
+  height: 25%; /* Adjusts the car's height relative to road height */
+  right: 0%;
+  width: auto; /* Maintains the aspect ratio */
+  z-index: 2; /* Ensures the car is above the road */
+  transform: rotate(180deg); /* Rotates the car by 180 degrees */
+  transition: transform 2s linear; /* Animation function */
+  
+}
+
+/* Animation keyframes to move the car */
+@keyframes moveCar_right {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(100vw); /* Adjusts the final position of the car */
+  }
+}
+
+@keyframes moveCar_left {
+  0% {
+      transform: translateX(0%) rotate(180deg);
+  }
+  100% {
+      transform: translateX(-100vw) rotate(180deg); /* Adjusts the final position of the car */
+  }
+}
+
+/* Applies the animation to the car element */
+#car_1.animate {
+  animation: moveCar_right 4s linear infinite;
+}
+
+/* Applies the animation to the car element */
+#car_2.animate {
+  animation: moveCar_left 4s linear infinite;
+}
+
