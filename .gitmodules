@@ -1,0 +1,6 @@
+[submodule "c++/jsoncpp"]
+	path = c++/jsoncpp
+	url = https://github.com/open-source-parsers/jsoncpp.git
+[submodule "All_Way_Stop/c++/jsoncpp"]
+	path = All_Way_Stop/c++/jsoncpp
+	url = https://github.com/open-source-parsers/jsoncpp.git
