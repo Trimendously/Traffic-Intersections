@@ -1,0 +1,72 @@
+[
+    {
+        "car_id": "car1",
+        "entrance": "south",
+        "exit": "west",
+        "speed": 60,
+        "arrival_time": 1000
+    },
+    {
+        "car_id": "car2",
+        "entrance": "south",
+        "exit": "east",
+        "speed": 45,
+        "arrival_time": 900
+    },
+    {
+        "car_id": "car3",
+        "entrance": "east",
+        "exit": "north",
+        "speed": 55,
+        "arrival_time": 4000
+    },
+    {
+        "car_id": "car4",
+        "entrance": "west",
+        "exit": "south",
+        "speed": 70,
+        "arrival_time": 3100
+    },
+    {
+        "car_id": "car5",
+        "entrance": "south",
+        "exit": "west",
+        "speed": 50,
+        "arrival_time": 3000
+    },
+    {
+        "car_id": "car6",
+        "entrance": "north",
+        "exit": "south",
+        "speed": 65,
+        "arrival_time": 6000
+    },
+    {
+        "car_id": "car7",
+        "entrance": "west",
+        "exit": "east",
+        "speed": 40,
+        "arrival_time": 7000
+    },
+    {
+        "car_id": "car8",
+        "entrance": "east",
+        "exit": "south",
+        "speed": 75,
+        "arrival_time": 8000
+    },
+    {
+        "car_id": "car9",
+        "entrance": "south",
+        "exit": "north",
+        "speed": 55,
+        "arrival_time": 9000
+    },
+    {
+        "car_id": "car10",
+        "entrance": "east",
+        "exit": "west",
+        "speed": 60,
+        "arrival_time": 10000
+    }
+]

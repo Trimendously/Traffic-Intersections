@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Road</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+  </head>
+  
+  <body>
+    <div id = "stage">
+      <div id="road_horizontal">
+        <div id="stripes"></div>
+
+        <div class="horizontal_entrance" id="entrance_west"></div>
+        <div class="horizontal_exit" id="exit_west"></div>
+        
+        <div class="horizontal_entrance" id="entrance_east"></div>
+        <div class="horizontal_exit" id="exit_east"></div>
+
+      </div>
+      <div id="road_vertical">
+        <div id="v_stripes"></div>
+        
+        <div class="vertical_entrance" id="entrance_north"></div>
+        <div class="vertical_exit" id="exit_north"></div>
+        
+        <div class="vertical_entrance" id="entrance_south"></div>
+        <div class="vertical_exit" id="exit_south"></div>
+      </div>
+    
+      <div id = "intersection_point"></div>
+      <button id="startButton">Spawn Cars</button>
+      <button id="pauseButton">Pause Cars (WIP)</button>
+      <button id="endButton">Despawn Cars</button>
+    </div>
+
+    <script src="car.js"></script>
+    <script src="stripes.js"></script>
+  </body>
+
+</html>
